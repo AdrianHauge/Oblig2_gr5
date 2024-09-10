@@ -17,17 +17,10 @@ public class Run {
         for (String navn : servitorer) {
         new Servitor(brett, navn).start();
         }
-<<<<<<< HEAD
         
         
     }
     public static void skrivUtHeader(String[] kokker, String[] servitorer, int KAPASITET){
-=======
-        }
-
-        public void skrivUtHeader(String[] kokker, String[] Servitor,int KAPASITET){
-
->>>>>>> 1a225a4c2d140dc54234a7bb2b2653acf5052eba
         System.out.println("I denne simuleringen har vi \n"
         + kokker.length + " kokker");
         System.out.print("[");
@@ -37,7 +30,6 @@ public class Run {
         }
         System.out.println("]");
 
-<<<<<<< HEAD
         System.out.print(servitorer.length + " servitører ");
         System.out.print("[");
         for (int i = 0; i < servitorer.length; i++) {
@@ -50,7 +42,4 @@ public class Run {
     }
     
     
-=======
-
->>>>>>> 1a225a4c2d140dc54234a7bb2b2653acf5052eba
 }
