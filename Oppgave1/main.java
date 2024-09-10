@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class main {
+public class Main {
     private static String message = "Hallo verden!";
     private static boolean running = true;
 

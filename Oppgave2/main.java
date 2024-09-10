@@ -1,5 +1,5 @@
 package Oppgave2;
 
-public class main {
+public class Main {
 
 }
