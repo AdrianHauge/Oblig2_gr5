@@ -1,5 +1,5 @@
 package Oppgave2;
 
-public class Main {
+public class Run {
 
 }
