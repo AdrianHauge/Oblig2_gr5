@@ -27,6 +27,7 @@ public void run(){
         brett.wait();
     }
 brett.taHamburger(navn);
+brett.notifyAll();
 
     }
 } catch (InterruptedException e){
