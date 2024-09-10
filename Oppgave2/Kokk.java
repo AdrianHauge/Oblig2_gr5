@@ -16,8 +16,6 @@ public class Kokk extends Thread {
     @Override
     public void run() {
 
-
-
         while(true) {
 
             try {
@@ -29,7 +27,6 @@ public class Kokk extends Thread {
                     System.out.println(navn + " (kokk) klar med hamburger, men brett fullt. Venter!");
                     brett.wait();
                 }
-                
                 brett.leggTilHamburger(navn);
                 brett.notifyAll();
             }
@@ -38,6 +35,5 @@ public class Kokk extends Thread {
                 e.printStackTrace();
             }
         }
-
     }
 }
