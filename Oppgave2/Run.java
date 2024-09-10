@@ -17,6 +17,7 @@ public class Run {
         for (String navn : servitorer) {
         new Servitor(brett, navn).start();
         }
+<<<<<<< Updated upstream
         
         
     }
@@ -25,4 +26,16 @@ public class Run {
     }
     
     
+=======
+        }
+
+        public void skrivUtHeader(String[] kokker, String[] Servitor,int KAPASITET){
+
+        System.out.println("I denne simuleringen har vi \n"
+                          +"");
+
+        }
+
+
+>>>>>>> Stashed changes
 }
