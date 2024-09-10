@@ -1,15 +1,36 @@
 package Oppgave2;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class HamburgerBrett {
 
+    private Queue<Hamburger> brett;
+    private int størrelse;
+    private int teller;
+
+    public HamburgerBrett(int størrelse) {
+        this.størrelse = størrelse;
+        this.teller = 0;
+        this.brett = new LinkedList<Hamburger>();
+    }
+
     public boolean erFullt() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'erFullt'");
+        return størrelse == teller;
+    }
+
+    public boolean erTom() {
+        return teller == 0;
     }
 
     public void leggTilHamburger(String navn) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'leggTilHamburger'");
+        teller++;
+        brett.add(burger);
+
+    }
+
+    public void taHamburger(String navn) {
+
     }
 
 

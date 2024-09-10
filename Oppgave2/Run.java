@@ -17,16 +17,6 @@ public class Run {
         for (String navn : servitorer) {
         new Servitor(brett, navn).start();
         }
-<<<<<<< Updated upstream
-        
-        
-    }
-    public String skrivUtHeader(){
-        return null;
-    }
-    
-    
-=======
         }
 
         public void skrivUtHeader(String[] kokker, String[] Servitor,int KAPASITET){
@@ -37,5 +27,4 @@ public class Run {
         }
 
 
->>>>>>> Stashed changes
 }
