@@ -2,8 +2,8 @@ package Oppgave2;
 
 public class Hamburger{
 
-    private int antall;
-    private int id;
+    private static int antall;
+    private final int id;
 
 
     public Hamburger(){

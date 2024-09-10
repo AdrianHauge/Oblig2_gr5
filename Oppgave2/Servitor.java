@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class Servitor extends Thread{
 
-private HamburgerBrett brett;
+private final HamburgerBrett brett;
 private final Random random = new Random();
-private String navn;
+private final String navn;
 
     public Servitor(HamburgerBrett brett, String navn){
 this.brett = brett;
