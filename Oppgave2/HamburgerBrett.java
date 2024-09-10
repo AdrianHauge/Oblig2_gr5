@@ -24,16 +24,16 @@ public class HamburgerBrett {
     }
 
     public void leggTilHamburger(String navn) {
+        Hamburger burger = new Hamburger();
         teller++;
         brett.add(burger);
-
+        System.out.println(navn + " (kokk) legger på hamburger "+ burger.toString() + ". Brett: " + brett.toString());
     }
 
     public void taHamburger(String navn) {
-
+        Hamburger burger = brett.poll();
+        teller--;
+        System.out.println(navn + " (servitør) tar av hamburger" + burger.toString() + ". Brett: " + brett.toString());
     }
-
-
-
 
 }
