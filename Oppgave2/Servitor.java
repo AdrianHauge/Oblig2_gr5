@@ -17,11 +17,10 @@ this.navn = navn;
 @Override
 public void run(){
 
-    
-
     while(true){
 Thread.sleep((random.nextInt(5)+2)*1000);
 brett.taHamburger();
+System.out.println(Thread.currentThread().getName() + " (servitør) tar av hamburger " + hamburger + ". Brett: " + brett);
     }
 }
 
