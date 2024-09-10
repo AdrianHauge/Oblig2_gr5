@@ -11,20 +11,13 @@ public class Run {
         HamburgerBrett brett = new HamburgerBrett(KAPASITET);
 
         for (String navn : kokker) {
-        new Kokk(brett, navn).start();
+            new Thread(new Kokk(brett, navn)).start();
         }
-
         for (String navn : servitorer) {
-        new Servitor(brett, navn).start();
+            new Thread(new Servitor(brett, navn)).start();
         }
-        }
-
-        public void skrivUtHeader(String[] kokker, String[] Servitor,int KAPASITET){
-
-        System.out.println("I denne simuleringen har vi \n"
-                          +"");
-
-        }
-
-
+    }
+    public String skrivUtHeader(){
+        return null;
+    }
 }
