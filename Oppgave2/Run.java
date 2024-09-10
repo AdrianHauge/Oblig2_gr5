@@ -17,7 +17,8 @@ public class Run {
         for (String navn : servitorer) {
         new Servitor(brett, navn).start();
         }
-        }
+        
+    }
 
         public static void skrivUtHeader(String[] kokker, String[] servitor,int KAPASITET){
 

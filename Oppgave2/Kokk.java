@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class Kokk extends Thread {
 
-    private HamburgerBrett brett;
-    private String navn;
-    private Random random = new Random();
+    private final HamburgerBrett brett;
+    private final String navn;
+    private final Random random = new Random();
 
     public Kokk(HamburgerBrett brett, String navn) {
         this.navn = navn;
