@@ -17,6 +17,7 @@ this.navn = navn;
 @Override
 public void run(){
 
+    while(true){
     try{
     int tid = random.nextInt(5)+2;
     Thread.sleep(tid*1000);
@@ -33,7 +34,7 @@ brett.notifyAll();
 } catch (InterruptedException e){
     e.printStackTrace();
 }
-
+    }
 }
 }
 
