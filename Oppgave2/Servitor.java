@@ -17,7 +17,6 @@ this.navn = navn;
 @Override
 public void run(){
 
-    try
     while(true){
 Thread.sleep((random.nextInt(5)+2)*1000);
 brett.taHamburger();
