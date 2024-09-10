@@ -37,3 +37,4 @@ public class HamburgerBrett {
         teller--;
         System.out.println(navn + " (servitør) tar av hamburger" + burger.toString() + ". Brett: " + brett.toString());
     }
+}
