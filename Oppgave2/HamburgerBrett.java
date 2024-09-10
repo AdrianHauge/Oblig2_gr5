@@ -12,7 +12,7 @@ public class HamburgerBrett {
     public HamburgerBrett(int størrelse) {
         this.størrelse = størrelse;
         this.teller = 0;
-        this.brett = new LinkedList<Hamburger>();
+        this.brett = new LinkedList<>();
     }
 
     public boolean erFullt() {
