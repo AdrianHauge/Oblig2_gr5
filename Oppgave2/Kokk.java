@@ -22,7 +22,7 @@ public class Kokk extends Thread {
 
             try {
             int tid = random.nextInt(5) + 2;
-            Thread.sleep(tid * 1000);            
+            Thread.sleep(tid * 1000);
             
             synchronized(brett) {
                 while(brett.erFullt()) {
