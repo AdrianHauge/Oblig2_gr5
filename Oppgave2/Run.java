@@ -17,11 +17,12 @@ public class Run {
         for (String navn : servitorer) {
         new Servitor(brett, navn).start();
         }
-        }
-
-        public skrivUtHeader(){
-
-        }
-
-
+        
+        
+    }
+    public String skrivUtHeader(){
+        return null;
+    }
+    
+    
 }
