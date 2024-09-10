@@ -1,4 +1,4 @@
-Package Oppgave2;
+package Oppgave2;
 
 public class Servitor {
 
