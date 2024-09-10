@@ -26,15 +26,14 @@ public void run(){
         System.out.println(navn + " (servitør) ønsker og ta en hamburger, men brettet er tomt. Venter! \n");
         brett.wait();
     }
-brett.taHamburger();
+brett.taHamburger(navn);
 
-System.out.println(Thread.currentThread().getName() + " (servitør) tar av hamburger " + hamburger + ". Brett: " + brett);
     }
 } catch (InterruptedException e){
     e.printStackTrace();
 }
 
-
-    
-
+  }
 }
+
+
