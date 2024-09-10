@@ -6,7 +6,6 @@ public class main {
 
     public static void main(String[] args){
 
-<<<<<<< HEAD
         Thread printThread = new Thread(() -> {
             while (running) {
                 System.out.println(message);
@@ -38,25 +37,6 @@ public class main {
             e.printStackTrace();
         }
     }
-=======
-String valg = JOptionPane.showInputDialog(null, "Skriv inn din melding, quit for og slutte", "Homo?",JOptionPane.YES_NO_CANCEL_OPTION);
-
-if(valg == JOptionPane.YES_OPTION ){
-
-
-
-}else if(valg == JOptionPane.NO_OPTION){
-
-
-    
-}else{
-
-}
-
-
-
-}
->>>>>>> 496c5b03c43e3e01a21c75ac48aaf7245c332c58
 
 
 }
