@@ -17,12 +17,21 @@ this.navn = navn;
 @Override
 public void run(){
 
-    try
-    while(true){
-Thread.sleep((random.nextInt(5)+2)*1000);
+    try{
+    int tid = random.nextInt(5)+2;
+    Thread.sleep(tid*1000);
+
+    synchronized(brett){
+    while(brett.erTom()){
+        System.out.println(navn + " (servitør) ønsker og ta en hamburger, men brettet er tomt. Venter! \n");
+        brett.wait();
+    }
 brett.taHamburger();
+
 System.out.println(Thread.currentThread().getName() + " (servitør) tar av hamburger " + hamburger + ". Brett: " + brett);
     }
+} catch (InterruptedException e){
+    e.printStackTrace();
 }
 
 
